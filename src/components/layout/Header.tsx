@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Bell, MessageCircle, Home, Users, Briefcase, User, LogOut, Palette } from 'lucide-react';
-import { LogoWatoul } from '.components/img/Mejorado.svg';
+/*import { LogoWatoul } from './img/Mejorado.svg';*/
 
 interface HeaderProps {
   isLoggedIn: boolean;
   user?: any;
   onLogin: () => void;
-  onLogout: () => void;
+  onLogout: () => void;     
 }
 
 const Header: React.FC<HeaderProps> = ({ isLoggedIn, user, onLogin, onLogout }) => {
@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ isLoggedIn, user, onLogin, onLogout }) 
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <div className="p-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg">
-                <LogoWatoul className="h-6 w-6 text-white" />
+                <Palette className="h-6 w-6 text-white" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Watoul
