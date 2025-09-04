@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Bell, MessageCircle, Home, Users, Briefcase, User, LogOut, Palette } from 'lucide-react';
-import { LogoWatoul } from 'src/img/Mejorado.svg';
+import { LogoWatoul } from '.components/img/Mejorado.svg';
 
 interface HeaderProps {
   isLoggedIn: boolean;
